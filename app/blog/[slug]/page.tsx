@@ -6,6 +6,7 @@ import ReadingProgress from "@/components/ReadingProgress";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import RelatedPosts from "@/components/RelatedPosts";
 import { ArticleJsonLd } from "@/components/JsonLd";
+import { OrganizationJsonLd } from "@/components/JsonLd";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -41,7 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         ...(coverImage ? { images: [coverImage] } : {}),
       },
       alternates: {
-        canonical: `https://greenkollar.com/blog/${params.slug}`,
+        canonical: `https://greenkollar.com/blog/${params.slug}/`,
       },
     };
   } catch {
@@ -76,12 +77,14 @@ export default function PostPage({ params }: Props) {
 
   return (
     <>
+      <OrganizationJsonLd />
       <ArticleJsonLd
         title={frontmatter.title}
         description={frontmatter.description}
         date={frontmatter.date}
         author={frontmatter.author}
         slug={slug}
+        category={frontmatter.category}
         image={frontmatter.coverImage || undefined}
       />
       <ReadingProgress />

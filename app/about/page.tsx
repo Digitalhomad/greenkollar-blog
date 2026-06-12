@@ -4,6 +4,19 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About GreenKollar — Jobs for the Green Economy",
   description: "GreenKollar connects the next generation of workers with sustainable, impactful careers in clean energy, climate tech, and the broader green economy.",
+  openGraph: {
+    title: "About GreenKollar — Jobs for the Green Economy",
+    description: "GreenKollar connects the next generation of workers with sustainable, impactful careers in clean energy, climate tech, and the broader green economy.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About GreenKollar",
+    description: "GreenKollar connects workers with sustainable, impactful careers in the green economy.",
+  },
+  alternates: {
+    canonical: "https://greenkollar.com/about/",
+  },
 };
 
 export default function AboutPage() {

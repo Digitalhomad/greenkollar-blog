@@ -3,8 +3,21 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "All Categories — GreenKollar Blog",
+  title: "Blog Categories — GreenKollar",
   description: "Browse all GreenKollar blog categories: Green Jobs & Hiring Tips, Industry News & Trends, and Company Spotlights.",
+  openGraph: {
+    title: "Blog Categories — GreenKollar",
+    description: "Browse all GreenKollar blog categories: Green Jobs & Hiring Tips, Industry News & Trends, and Company Spotlights.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog Categories — GreenKollar",
+    description: "Browse all GreenKollar blog categories for green economy career insights.",
+  },
+  alternates: {
+    canonical: "https://greenkollar.com/blog/categories/",
+  },
 };
 
 const categoryMeta: Record<string, { icon: string; description: string; color: string; gradient: string }> = {
