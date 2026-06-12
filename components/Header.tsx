@@ -64,8 +64,8 @@ export default function Header() {
           <nav className="hidden md:flex items-center gap-6">
             {[
               { label: "Blog", href: "/blog" },
-              { label: "Categories", href: "/blog/category/Green%20Jobs%20%26%20Hiring%20Tips" },
-              { label: "About GreenKollar", href: "#" },
+              { label: "Categories", href: "/blog/categories" },
+              { label: "About GreenKollar", href: "/about" },
             ].map((link) => (
               <Link
                 key={link.label}
@@ -109,8 +109,8 @@ export default function Header() {
               <div className="py-4 border-t border-gray-100 flex flex-col gap-3">
                 {[
                   { label: "Blog", href: "/blog" },
-                  { label: "Categories", href: "/blog/category/Green%20Jobs%20%26%20Hiring%20Tips" },
-                  { label: "About GreenKollar", href: "#" },
+                  { label: "Categories", href: "/blog/categories" },
+                  { label: "About GreenKollar", href: "/about" },
                 ].map((link) => (
                   <Link
                     key={link.label}
