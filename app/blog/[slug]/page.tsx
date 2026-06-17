@@ -62,6 +62,8 @@ const categoryGradients: Record<string, string> = {
   "Green Jobs & Hiring Tips": "from-green-600 via-emerald-700 to-teal-800",
   "Industry News & Trends": "from-cyan-700 via-sky-700 to-blue-800",
   "Company Spotlights": "from-amber-600 via-orange-700 to-rose-800",
+  "5-Year Trend Reports": "from-violet-600 via-purple-700 to-indigo-800",
+  "Country Spotlight": "from-lime-600 via-green-700 to-emerald-800",
 };
 
 export default function PostPage({ params }: Props) {

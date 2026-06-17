@@ -39,6 +39,18 @@ const categoryMeta: Record<string, { icon: string; description: string; color: s
     color: "text-amber-700",
     gradient: "from-amber-400 to-orange-600",
   },
+  "5-Year Trend Reports": {
+    icon: "📊",
+    description: "Long-view data reports tracking how green job markets, sectors, and salaries have shifted over five years.",
+    color: "text-violet-700",
+    gradient: "from-violet-400 to-indigo-600",
+  },
+  "Country Spotlight": {
+    icon: "🌍",
+    description: "Six-month roundups of green hiring activity across India and key global markets.",
+    color: "text-lime-700",
+    gradient: "from-lime-400 to-emerald-600",
+  },
 };
 
 export default function CategoriesPage() {

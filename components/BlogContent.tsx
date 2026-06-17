@@ -11,6 +11,8 @@ const CATEGORIES = [
   "Green Jobs & Hiring Tips",
   "Industry News & Trends",
   "Company Spotlights",
+  "5-Year Trend Reports",
+  "Country Spotlight",
 ];
 
 interface BlogContentProps {

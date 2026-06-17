@@ -16,6 +16,8 @@ const categoryGradients: Record<string, string> = {
   "Green Jobs & Hiring Tips": "from-green-400 via-emerald-500 to-teal-600",
   "Industry News & Trends": "from-cyan-400 via-sky-500 to-blue-600",
   "Company Spotlights": "from-amber-400 via-orange-500 to-rose-500",
+  "5-Year Trend Reports": "from-violet-400 via-purple-500 to-indigo-600",
+  "Country Spotlight": "from-lime-400 via-green-500 to-emerald-600",
 };
 
 function formatDate(dateStr: string) {
